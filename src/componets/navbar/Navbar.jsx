@@ -51,10 +51,14 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="">
+              <BsFillMenuButtonFill />
+            </span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav text-uppercase d-flex align-items-baseline ms-auto mb-2 mb-lg-0">
+          <div
+            className="collapse navbar-collapse overflow-hidden"
+            id="navbarSupportedContent">
+            <ul className="navbar-nav overflow-hidden text-uppercase d-flex align-items-baseline ms-auto mb-2 mb-lg-0">
               {navItems.map((item, index) => (
                 <li className="nav-item" key={item.id}>
                   <a
