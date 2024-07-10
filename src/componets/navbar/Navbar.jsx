@@ -51,9 +51,7 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation">
-            <span className="">
-              <BsFillMenuButtonFill />
-            </span>
+            <span class="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav text-uppercase d-flex align-items-baseline ms-auto mb-2 mb-lg-0">

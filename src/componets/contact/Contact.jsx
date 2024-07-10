@@ -55,7 +55,7 @@ const Contact = () => {
       </div>
 
       {/* card*/}
-      <div className="card-wrapper border shadow p-3 rounded-2 d-flex justify-content-center align-items-center flex-wrap mt-5">
+      <div className="card-wrapper mx-auto border shadow p-3 rounded-2 mt-5">
         <div
           data-aos="fade-up"
           className=" d-flex justify-content-center align-items-center flex-row flex-md-row w-100">
