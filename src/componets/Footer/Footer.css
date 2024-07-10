@@ -1,0 +1,10 @@
+.social-icon {
+  background-color: rgba(0, 0, 0, 0.837);
+  opacity: 1;
+}
+.social-icon a {
+  z-index: 999;
+}
+.w-color {
+  color: rgba(255, 255, 255, 0.686);
+}

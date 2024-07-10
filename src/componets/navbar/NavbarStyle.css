@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&display=swap");
+body {
+  padding-top: 4rem;
+}
+
+.bg-gradient-custom {
+  background: linear-gradient(to right, #c6f6d5, #bee3f8) !important;
+}
+.navbar-brand {
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.logo a {
+  text-decoration: none;
+}
+.nav-link {
+  font-family: "Josefin Sans", sans-serif;
+  margin-right: 20px;
+}
+.nav-items .btn {
+  background-color: transparent;
+  border: none;
+}
+
+.nav-items ul {
+  display: none;
+}
+
+.nav-items ul.d-block {
+  display: flex;
+}
+
+.nav-items ul li a:hover {
+  color: #f6c400; /* Change color on hover */
+}
+
+.nav-items ul li a {
+  transition: color 0.3s ease-in-out;
+}
+
+/* underline animation */
+/* NavbarStyle.css */
+
+/* General styles for navbar */
+.navbar-nav .nav-link {
+  position: relative;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Underline effect on hover */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  background: #f6c400;
+  transition: width 0.3s ease-in-out;
+  bottom: -5px;
+  left: 0;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Active class styling */
+.navbar-nav .nav-link.active {
+  color: #007bff;
+}
+
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+  background: linear-gradient(to right, orange, white 50%, rgb(17, 255, 17));
+}
+
+/* Hire me button styling */
+
+.hire-btn button {
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.hire-btn button:hover {
+  border: none;
+  background-color: #f6c400;
+  transform: scale(1.05);
+}

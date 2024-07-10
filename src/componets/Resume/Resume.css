@@ -1,0 +1,54 @@
+/* Resume.css */
+.design .c1,
+.design .c2 {
+  width: 12px;
+  height: 12px;
+}
+
+.design .line {
+  width: 230px;
+  height: 2px;
+}
+.text-warning {
+  color: #f6c400 !important;
+}
+.fw-semibold {
+  font-weight: 600 !important;
+}
+.border-primary {
+  border-color: #ffce0b !important;
+}
+.in-box {
+  background-color: #fff;
+  z-index: 99;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.006);
+  height: 100% !important;
+  width: 100% !important;
+}
+.border-circle {
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  width: 100% !important;
+  height: 100% !important;
+  display: flex;
+  justify-content: center;
+  padding: 3px !important;
+}
+.border-circle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  height: 120%;
+  width: 40%;
+  background-color: #ffcf11;
+  animation: move 2.5s infinite;
+}
+@keyframes move {
+  100% {
+    transform: translate(-50%, -50%) rotate(225deg);
+  }
+}

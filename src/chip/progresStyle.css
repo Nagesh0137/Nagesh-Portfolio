@@ -1,0 +1,16 @@
+.progress-bar {
+  height: 100%;
+  background-color: #f6c400;
+}
+.progress {
+  height: 8px !important;
+}
+
+@keyframes progress-animation {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}

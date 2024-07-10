@@ -1,0 +1,27 @@
+/* Custom CSS for remaining styles */
+
+.divider {
+  height: 1.1px;
+  position: absolute;
+  width: 92%;
+  background-color: #d1d5db;
+}
+
+.rotate-icon-md {
+  transform: rotate(90deg);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sm-display-3 {
+    font-size: 2rem;
+  }
+
+  .sm-display-4 {
+    font-size: 1.25rem;
+  }
+}
+.send-button:hover i {
+  transform: translateX(10px);
+  transition: 0.5s;
+}

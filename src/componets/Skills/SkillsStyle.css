@@ -1,0 +1,30 @@
+#skills {
+  margin-top: 16px;
+}
+
+#skills .relative {
+  position: relative;
+}
+
+#skills .relative span {
+  height: 1.1px;
+  right: 0;
+  width: 90%;
+  background-color: #ccc;
+}
+
+#skills .w-75 {
+  width: 75%;
+}
+
+#skills .w-90 {
+  width: 90%;
+}
+
+#skills .gap-3 {
+  gap: 1rem;
+}
+
+#skills .gap-4 {
+  gap: 1.5rem;
+}

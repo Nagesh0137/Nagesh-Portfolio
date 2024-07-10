@@ -1,0 +1,10 @@
+/* Custom CSS */
+.card-wrapper {
+  max-width: 90%;
+}
+
+@media (max-width: 576px) {
+  .card-wrapper {
+    max-width: 100%;
+  }
+}
