@@ -38,13 +38,13 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
       className={`w-100 mx-auto fixed-top py-3 z-30 ${
         scrollPosition > 0 ? `bg-white shadow` : "bg-gradient-custom"
       }`}>
-      <nav className="navbar navbar-expand-lg m-0 p-0">
-        <div className="container">
+      <nav className="navbar overflow-hidden navbar-expand-lg m-0 p-0">
+        <div className="container overflow-hidden">
           <a className="navbar-brand" href="#home">
             Nagesh Sonawane
           </a>
           <button
-            className="navbar-toggler"
+            className="navbar-toggler overflow-hidden"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -52,7 +52,6 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
             aria-expanded="false"
             aria-label="Toggle navigation">
             <span className="">
-              {" "}
               <BsFillMenuButtonFill />
             </span>
           </button>
