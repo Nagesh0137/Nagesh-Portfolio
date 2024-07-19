@@ -10,13 +10,13 @@ const WorkCard = () => {
     <>
       {reversedData.map((data) => (
         <>
-          <div className="col-4" data-aos="zoom-in">
+          <div className="col-12 col-md-4" data-aos="zoom-in">
             <div key={data.id} className="card mt-3">
               <div className="card-details">
                 <img
                   src={data.img}
                   alt=""
-                  className=" w-100 h-100"
+                  className="w-100 h-100"
                   style={{ cursor: "pointer" }}
                 />
               </div>

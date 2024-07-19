@@ -108,7 +108,7 @@ const Skills = ({ darkMode }) => {
             </div>
           </div>
           {/* right box */}
-          <div className="position-relative flex-1 d-flex flex-wrap p-4 gap-4 align-items-center justify-content-center w-100 mt-5 mt-md-0">
+          <div className="position-relative flex-1 d-flex flex-wrap p-md-4 gap-4 align-items-center justify-content-center w-100 mt-5 mt-md-0">
             <div className="d-flex mt-4 mt-md-0 flex-column gap-4">
               <SkillBox
                 logo={<SiGithub />}
