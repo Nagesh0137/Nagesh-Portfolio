@@ -58,7 +58,8 @@ const Contact = () => {
       <div className="card-wrapper mx-auto border shadow p-3 rounded-2 mt-5">
         <div
           data-aos="fade-up"
-          className=" d-flex justify-content-center align-items-center flex-row flex-md-row w-100">
+          className=" d-flex justify-content-center align-items-center flex-row flex-md-row w-100"
+        >
           <div className="text-center mb-4 mb-md-0" data-aos="zoom-in">
             <div>
               <h3 className="display-4 fw-bold ">You Need EMP</h3>
@@ -75,8 +76,9 @@ const Contact = () => {
         </div>
         <div data-aos="fade-up" className=" p-2 mt-md-5 mt-2 w-100">
           <form
-            className="d-flex flex-column gap-3 w-100 mx-auto"
-            onSubmit={onSubmit}>
+            className="d-flex flex-column send-button gap-3 w-100 mx-auto"
+            onSubmit={onSubmit}
+          >
             <input
               className="form-control shadow-sm rounded"
               type="email"
@@ -99,14 +101,25 @@ const Contact = () => {
               placeholder="Write your message"
               name="message"
             />
-            <button
-              data-aos="zoom-in"
-              className="btn send-button w-25 mx-auto btn-warning text-white fw-bold d-flex justify-content-center align-items-center"
-              type="submit">
+
+            <button className=" p-1 px-3  mx-auto btn-warning text-white fw-bold d-flex justify-content-center align-items-center">
+              <div class="svg-wrapper-1 ">
+                <div class="svg-wrapper">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path
+                      fill="currentColor"
+                      d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
               <span>Send</span>
-              <i>
-                <RiSendPlaneFill className="ms-1" />
-              </i>
             </button>
           </form>
         </div>
