@@ -9,7 +9,8 @@ const Work = () => {
         <h3 className="display-6 fw-bold text-muted">Projects</h3>
         <span
           className="position-absolute end-0 w-100 bg-secondary"
-          style={{ height: "1px" }}></span>
+          style={{ height: "1px" }}
+        ></span>
       </div>
       <div data-aos="fade-up" className="w-100">
         <p className="text-secondary fw-medium">Here are some of my works.</p>

@@ -37,7 +37,8 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
     <div
       className={`w-100 mx-auto fixed-top py-3 z-30 ${
         scrollPosition > 0 ? `bg-white shadow` : "bg-gradient-custom"
-      }`}>
+      }`}
+    >
       <nav className="navbar overflow-hidden navbar-expand-lg m-0 p-0">
         <div className="container overflow-hidden">
           <a className="navbar-brand" href="#home">
@@ -50,14 +51,16 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="">
+            aria-label="Toggle navigation"
+          >
+            <span className="">
               <BsFillMenuButtonFill />
             </span>
           </button>
           <div
             className="collapse navbar-collapse overflow-hidden"
-            id="navbarSupportedContent">
+            id="navbarSupportedContent"
+          >
             <ul className="navbar-nav overflow-hidden text-uppercase d-flex align-items-baseline ms-auto mb-2 mb-lg-0">
               {navItems.map((item, index) => (
                 <li className="nav-item" key={item.id}>
@@ -66,7 +69,8 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
                       activeIndex === index ? "active" : ""
                     }`}
                     href={`#${item.name}`}
-                    onClick={() => setActiveIndex(index)}>
+                    onClick={() => setActiveIndex(index)}
+                  >
                     {item.name.charAt(0).toUpperCase() + item.name.slice(1)}
                   </a>
                 </li>

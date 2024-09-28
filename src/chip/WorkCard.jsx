@@ -8,10 +8,10 @@ const WorkCard = () => {
 
   return (
     <>
-      {reversedData.map((data) => (
+      {reversedData.map((data, index) => (
         <>
-          <div className="col-12 col-md-4" data-aos="zoom-in">
-            <div key={data.id} className="card mt-3">
+          <div className="col-12 col-md-4" data-aos="zoom-in" key={index}>
+            <div key={data.id} className="card mt-3 shadow-lg">
               <div className="card-details">
                 <img
                   src={data.img}
@@ -26,7 +26,8 @@ const WorkCard = () => {
                   href={data.link}
                   target="_blank"
                   className=""
-                  style={{ textDecoration: "none", color: "white" }}>
+                  style={{ textDecoration: "none", color: "white" }}
+                >
                   <RxExternalLink className=" me-2" /> Check Live
                 </a>
               </button>

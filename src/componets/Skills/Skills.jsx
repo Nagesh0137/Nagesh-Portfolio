@@ -36,7 +36,8 @@ const Skills = ({ darkMode }) => {
             {/* left box */}
             <div
               data-aos="zoom-in"
-              className="d-flex align-items-center justify-content-center shadow-lg ">
+              className="d-flex align-items-center justify-content-center bg-white shadow-lg rounded "
+            >
               <div className="d-flex flex-column gap-3 w-75 my-4 w-90">
                 <ProgressBar
                   logo={

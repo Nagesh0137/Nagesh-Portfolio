@@ -14,7 +14,8 @@ const ProgressBar = ({ logo, name, value, duration = 3 }) => {
           style={{
             width: `${value}%`,
             animation: `progress-animation ${duration}s linear`,
-          }}></div>
+          }}
+        ></div>
       </div>
     </div>
   );

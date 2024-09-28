@@ -21,7 +21,8 @@ const App = () => {
         <div className="d-flex justify-content-center align-items-center vh-100">
           <BarLoader color="#f6c400" height={4} />
         </div>
-      }>
+      }
+    >
       {loading ? (
         <div className="d-flex justify-content-center align-items-center vh-100">
           <BarLoader color="#f6c400" height={4} />
